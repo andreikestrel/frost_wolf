@@ -1,0 +1,29 @@
+.box-select{
+    width: 930px;
+    height: 80px;
+    margin: 24px 0;
+}
+.box-select label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+select{
+    width: 100%;
+    border: none;
+    padding: 24px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .box-select {
+        width: auto;
+    }
+}
+
+/* Estilos para Celular (e.g., largura máxima de 480px) */
+@media screen and (max-width: 480px) {
+    .box-select {
+        width: auto;
+    }
+}
