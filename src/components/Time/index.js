@@ -1,3 +1,4 @@
+import Player from '../Player'
 import './Time.css'
 
 const Time = (props) => {
@@ -7,7 +8,8 @@ const Time = (props) => {
     return(
         <section className='time' style={css1}>
             <h3 style={css2}>{props.nome}</h3>
-            
+
+            {props.jogadores.map( jogador => <Player nome={jogador.nome} twitch={jogador.twitch} imagem={jogador.imagem} funcao={jogador.funcao}/>)}
         </section>
     )
 }
